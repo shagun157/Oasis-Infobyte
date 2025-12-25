@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url("kalam-bg.jpg") no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+/* Blur Overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(8px);
+    z-index: 0;
+}
+
+.start-quote {
+    margin: 20px auto 30px;
+    padding: 15px 25px;
+    max-width: 80%;
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    color: #1a237e;
+    background: rgba(227, 242, 253, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* Main Container */
+.container {
+    position: relative;
+    z-index: 1;
+    width: 78%;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 18px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 36px;
+}
+
+h3 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.intro img {
+    width: 230px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.intro p {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Sections */
+section {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #1565c0;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    text-align: justify;
+}
+
+/* Quote */
+.thought {
+    margin-top: 40px;
+    padding: 18px;
+    background: linear-gradient(to right, #bbdefb, #e3f2fd);
+    border-left: 6px solid #0d47a1;
+    font-size: 19px;
+    font-style: italic;
+    text-align: center;
+    color: #1a237e;
+    border-radius: 10px;
+}

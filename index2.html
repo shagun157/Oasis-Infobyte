@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan It</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Plan It</h1>
+  </header>
+
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('today')">Today</button>
+    <button class="tab" onclick="showTab('pending')">Pending</button>
+    <button class="tab" onclick="showTab('overdue')">Overdue</button>
+  </div>
+
+  <div class="container">
+    <div class="add-task">
+      <input type="text" id="taskInput" placeholder="Add new task...">
+      <input type="date" id="taskDate">
+      <select id="taskPriority">
+        <option value="high">High</option>
+        <option value="medium" selected>Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div id="taskList"></div>
+
+    <h3>Completed</h3>
+    <ul id="completedList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

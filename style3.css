@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+}
+
+body {
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: url('https://wallpaperaccess.com/full/416319.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    z-index:0;
+}
+
+.container {
+    position: relative;
+    z-index:1;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-card {
+    background: rgba(255,255,255,0.95);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+    width:350px;
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.form-card h2 {
+    margin-bottom:20px;
+}
+
+.form-card input {
+    width:100%;
+    padding:12px 10px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+}
+
+.form-card input:focus {
+    border-color:#38ef7d;
+    box-shadow:0 0 8px #38ef7d;
+}
+
+button {
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    background-color:#11998e;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover {
+    background-color:#38ef7d;
+}
+
+.switch {
+    margin-top:15px;
+    font-size:14px;
+    color:#555;
+}
+
+.switch span {
+    color:#11998e;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.message {
+    margin-top:10px;
+    font-size:14px;
+    color:red;
+}
+
+@media (max-width:400px) {
+    .form-card {
+        width:90%;
+        padding:20px;
+    }
+}

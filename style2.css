@@ -1,0 +1,139 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  padding: 0 10px;
+  background-image: url('ima.webp');
+}
+
+header {
+  background-color: #3c5936;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-size: 3.5rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #d2dacd;
+  margin: 0 2px;
+  border-radius: 5px 5px 0 0;
+  font-weight: bold;
+}
+
+.tab.active {
+  background-color: #3c5936;
+  color: white;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.add-task {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.add-task input, .add-task select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.add-task input[type="text"] { flex: 1; }
+.add-task button {
+  padding: 10px 20px;
+  background-color: #3c5936;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.task-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-info input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.task-info .task-name {
+  font-weight: bold;
+}
+
+.task-info .task-date {
+  font-size: 12px;
+  color: gray;
+}
+
+.actions {
+  display: flex;
+  gap: 5px;
+}
+
+.actions button {
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.priority {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+.high { background-color: #e74c3c; }
+.medium { background-color: #f1c40f; }
+.low { background-color: #2ecc71; }
+
+.completed-task {
+  background: #d4edda !important;
+  text-decoration: line-through;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .actions {
+    margin-top: 10px;
+  }
+}
